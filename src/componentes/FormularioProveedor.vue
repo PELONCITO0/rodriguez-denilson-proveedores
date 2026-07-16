@@ -35,7 +35,14 @@ function guardarProveedor() {
   <input v-model="nombreContacto" placeholder="Nombre del contacto" />
   <input v-model="telefono" placeholder="Teléfono" />
   <input v-model="correo" placeholder="Correo electrónico" />
- <input v-model="categoria" placeholder="Categoría" />
+  <select v-model="categoria">
+    <option value="">Seleccione una categoría</option>
+    <option value="Alimentos">Alimentos</option>
+    <option value="Tecnología">Tecnología</option>
+    <option value="Ropa">Ropa</option>
+    <option value="Servicios">Servicios</option>
+    <option value="Otros">Otros</option>
+  </select>
   <input v-model="ciudad" placeholder="Ciudad" />
   <button @click="guardarProveedor">Guardar</button>
 
