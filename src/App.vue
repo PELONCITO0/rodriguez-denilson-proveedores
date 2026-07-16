@@ -6,12 +6,25 @@ import FormularioProveedor from './componentes/FormularioProveedor.vue'
 
 <template>
 
-  <EncabezadoApp
-    titulo="Registro de Proveedores"
-    subtitulo="Formulario para agregar proveedores"
-  />
-  <FormularioProveedor/>
+  <div class="encabezado-app">
+    <EncabezadoApp
+      titulo="Registro de Proveedores"
+      subtitulo="Formulario para agregar proveedores"
+    />
+  </div>
+
+ 
+    <FormularioProveedor/>
+
+  
 
 </template>
 
-<style scoped></style>
+<style scoped>
+
+  .encabezado-app {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+</style>
